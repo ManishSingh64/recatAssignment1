@@ -1,7 +1,8 @@
-/* .App {
-  text-align: center;
-} */
-
+.App > div{
+  /* border: 1px solid red; */
+  width: fit-content;
+  margin: auto;
+}
 
 .App-logo {
   height: 40vmin;
