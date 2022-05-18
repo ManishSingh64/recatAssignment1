@@ -1,27 +1,13 @@
 import React from 'react';
 
-const Points1 = () =>{
+const List = ({ data }) =>{
 
-    return <div>
-        <ul>
-            <li>Anroid</li>
-            <li>Blackberry</li>
-            <li>iPhone</li>
-            <li>Windows Phone</li>
-        </ul>
-    </div>
+    const list = data.map((item) =>{
+
+        return <li>{item}</li>
+    });
+
+    return <ul>{list}</ul>
 }
 
-const Points2 = () =>{
-
-    return <div>
-        <ul>
-            <li>Samsung</li>
-            <li>HTC</li>
-            <li>Micromax</li>
-            <li>Apple</li>
-        </ul>
-    </div>
-}
-
-export {Points1,Points2};
+export default List;

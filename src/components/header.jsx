@@ -5,7 +5,7 @@ const Header1 = () =>{
 
     return <div>
         <h2>Mobile Operating System</h2>
-    </div>
+       </div>
 };
 
 const Header2 = () =>{

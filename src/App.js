@@ -1,9 +1,12 @@
 // import logo from './logo.svg';
 import './App.css';
 import {Header1,Header2} from './components/header';
-import {Points1,Points2} from './components/points';
+import List from './components/points';
 
 function App() {
+    const mobileOS = ["Anroid","Blackberry", "iPhone","Windows"];
+    const mobileManuf = ["Samsung", "HTC", "Micromax", "Apple"];
+
   return (
     <div className="App">
 
@@ -11,11 +14,11 @@ function App() {
 
       <Header1></Header1>
 
-      <Points1></Points1>
+      <List data = {mobileOS}/>
 
       <Header2></Header2>
 
-      <Points2></Points2>
+      <List data= {mobileManuf} />
      </div>
       
     </div>
